@@ -25,10 +25,10 @@ public class DemoApplication {
   private static final String outputPath = "/Users/visualcamp/Desktop/vaano/";
 
   public static void main(String[] args) {
-    bufferedImage2();
+    javacv_method2();
   }
 
-  private void videoTransfer () {
+  private void ffmpeg_wrapper_method () {
 
     try {
       FFmpeg ffmpeg = new FFmpeg("/usr/local/bin/ffmpeg");
@@ -50,7 +50,7 @@ public class DemoApplication {
     }
   }
 
-  private static void bufferedImage () {
+  private static void javacv_method () {
     FFmpegFrameGrabber g = new FFmpegFrameGrabber(inputPath);
     try {
       g.start();
@@ -66,7 +66,7 @@ public class DemoApplication {
     }
   }
 
-  private static void bufferedImage2 () {
+  private static void javacv_method2 () {
     FFmpegFrameGrabber frameGrabber = new FFmpegFrameGrabber(inputPath);
     try {
       frameGrabber.start();
